@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: GETWAY-SERVICE
+zuul:
+  routes:
+    service-activite:
+      service-id: service-activite
+      path: /service-activite/**
+    service-pret:
+      service-id: service-pret
+      path: /service-pret/**
+
+
+eureka:
+  client:
+    enabled: false
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka/
+
+server:
+  port: 8080
+

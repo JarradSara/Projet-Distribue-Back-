@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-pret
+  
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka/
+
+server:
+  port: 8081
+     
+  
+      
